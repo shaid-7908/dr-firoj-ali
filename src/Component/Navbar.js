@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import Link from 'next/link';
 import CIMFR from '../Assets/Images/CIMFR.png'
 import  { useState, useEffect } from "react";
 import Image from 'next/image'
@@ -28,8 +29,12 @@ export default function Navbar() {
      </div>
      <div>
         <ul className='flex '>
+           <Link href='/'>
             <li className='mx-3'>Home</li>
+           </Link>
+             <Link href='/aboutme'>
             <li className='mx-3'>Dr. Firoj Ali</li>
+             </Link>
             <li className='mx-3'>Research</li>
             <li className='mx-3'>Members</li>
             <li className='mx-3'>Contact Us</li>
