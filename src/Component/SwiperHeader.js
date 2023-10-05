@@ -36,12 +36,12 @@ export default function SwiperHeader() {
   return (
    <>
    <Swiper  modules={[Navigation ,Pagination,Autoplay]}  autoplay={{
-          delay: 8000,
+          delay: 3000,
           disableOnInteraction: false,
         }} pagination={true} className="mySwiper ">
          {Images.map((e,index)=>(
             <SwiperSlide key={index}><div className=''>
-            <Image src={e.img} width={500} height={500} layout='responsive' style={{objectFit: "cover"}}
+            <Image src={e.img} width={500} height={500} alt='science image' layout='responsive' style={{objectFit: "cover"}}
             placeholder='blur'
             />
            
