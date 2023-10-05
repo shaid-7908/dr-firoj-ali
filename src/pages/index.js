@@ -11,8 +11,8 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-   <div className='min-h-screen max-w-screen bg-slate-100  flex flex-col items-center '>
-    <div className='containerWrap1 max-h-fit  '>
+   <div className='min-h-screen max-w-screen   flex flex-col items-center '>
+    <div className='containerWrap2 max-h-fit  '>
       <SwiperHeader/>
     </div>
 

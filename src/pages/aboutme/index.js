@@ -2,7 +2,7 @@ import React from 'react'
 import FirojALi from '../../Assets/Images/FirojALi.jpg'
 import Burdwan from '../../Assets/Images/Burdwan-University.webp'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope ,faPhone,faGraduationCap,faFileArrowDown} from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope ,faPhone,faGraduationCap,faFileArrowDown,faLinkedin} from '@fortawesome/free-solid-svg-icons'
 import Image from 'next/image'
 export default function index() {
   return (

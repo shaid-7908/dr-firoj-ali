@@ -9,3 +9,12 @@
 .containerWrap1 {
     @apply container mx-auto max-w-7xl
   }
+.containerWrap2 {
+    @apply container mx-auto max-w-[90rem]
+  }
+.mySwiper{
+    
+    border-radius: 10px;
+    width: 80%;
+    height: 80%;
+}
