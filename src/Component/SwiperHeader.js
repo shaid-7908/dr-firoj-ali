@@ -36,20 +36,13 @@ export default function SwiperHeader() {
   return (
    <>
    <Swiper  modules={[Navigation ,Pagination,Autoplay]}  autoplay={{
-          delay: 5000,
+          delay: 8000,
           disableOnInteraction: false,
         }} pagination={true} className="mySwiper ">
          {Images.map((e,index)=>(
             <SwiperSlide key={index}><div className=''>
             <Image src={e.img} width={500} height={500} layout='responsive' style={{objectFit: "cover"}}
-            className={`
-            duration-700 ease-in-out group-hover:opacity-75
-            ${
-              isLoading
-                ? "scale-110 blur-2xl grayscale"
-                : "scale-100 blur-0 grayscale-0"
-            })`}
-            onLoadingComplete={() => setLoading(false)}
+            placeholder='blur'
             />
            
           </div></SwiperSlide>
