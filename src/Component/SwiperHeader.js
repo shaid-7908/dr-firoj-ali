@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import { useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -31,6 +32,7 @@ const Images =[
 ]
 
 export default function SwiperHeader() {
+  const [isLoading, setLoading] = useState(true);
   return (
    <>
    <Swiper  modules={[Navigation ,Pagination,Autoplay]}  autoplay={{
@@ -39,7 +41,16 @@ export default function SwiperHeader() {
         }} pagination={true} className="mySwiper ">
          {Images.map((e,index)=>(
             <SwiperSlide key={index}><div className=''>
-            <Image src={e.img} width={500} height={500} layout='responsive' style={{objectFit: "cover"}}/>
+            <Image src={e.img} width={500} height={500} layout='responsive' style={{objectFit: "cover"}}
+            className={`
+            duration-700 ease-in-out group-hover:opacity-75
+            ${
+              isLoading
+                ? "scale-110 blur-2xl grayscale"
+                : "scale-100 blur-0 grayscale-0"
+            })`}
+            onLoadingComplete={() => setLoading(false)}
+            />
            
           </div></SwiperSlide>
          ))}
