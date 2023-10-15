@@ -38,7 +38,7 @@ export default function SwiperHeader() {
    <Swiper  modules={[Navigation ,Pagination,Autoplay]}  autoplay={{
           delay: 3000,
           disableOnInteraction: false,
-        }} pagination={true} className="w-[50vw] h-[50vh]">
+        }} pagination={true} className="w-[50vw] h-[60vh]">
          {Images.map((e,index)=>(
             <SwiperSlide key={index}><div className=''>
             <Image src={e.img} width={400} height={400} alt='science image' layout='responsive' style={{objectFit: "cover"}}
